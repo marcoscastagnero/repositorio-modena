@@ -1,3 +1,4 @@
+
 let pregunta = prompt ("¿De cual promoción queres cotización? ");
 
 while (pregunta != ESC){
@@ -17,8 +18,20 @@ while (pregunta != ESC){
         }
 }
 
+let cotizaciondolar = parseInt(prompt ("Dolar a pesos"));
 
+function cotizador (dolar, pesos, cotizar){
+    switch(cotizar){
+        case "disney":
+            return (dolar * pesos);
+            break;
+        default:
+            alert("no hay nada que cotizar")
+            break;
+    }
+}
 
+alert (cotizador (103, 10, "*"));
 /*
 let texto = prompt("Resultados de los principales equipos de Europa");
 
