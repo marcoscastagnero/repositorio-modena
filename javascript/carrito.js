@@ -1,4 +1,47 @@
+function promociones (dias, precio, disponibilidad) {
+    this.dias = dias;
+    this.precio = precio;
+    this.disponibilidad = disponibilidad;
+}
+const maceio = new promociones ("8 días / 7 noches", "$79000","Hay disponibilidad");
 
+class promociones1 {
+    constructor (Dias, Precio, Disponibilidad, Opciones){
+        this.Dias = Dias;
+        this.Precio = Precio;
+        this.Disponibilidad = Disponibilidad;
+        this.Opciones = Opciones;
+    }
+    consultar(){
+        console.log("Cantidad de días:"+ " " + this.dias);
+        console.log("Precio final:"+ " " + this.precio);
+        console.log("Disponibilidad:"+ " " + this.Disponibilidad);
+        console.log("Existe estas opciones:"+ " " + this.opciones);
+    }
+}
+
+const disney = new promociones1 (
+    "8 días / 7 noches",
+    "U$S390 o $38212",
+    "Hay disponibilidad",
+    "Pipa Brasil");
+
+class promociones3{
+    constructor(Dias, Precio, Disponibilidad){
+        this.dias = Dias;
+        this.precio = Precio;
+        this.disponibilidad = Disponibilidad;
+    }
+}
+
+const salta = new promociones3(
+    "3 noches",
+    "$11350 por persona",
+    "Hay disponibilidad");
+
+
+
+/*
 let pregunta = prompt ("¿De cual promoción queres cotización? ");
 
 while (pregunta != ESC){
@@ -32,7 +75,7 @@ function cotizador (dolar, pesos, cotizar){
 }
 
 alert (cotizador (103, 10, "*"));
-/*
+
 let texto = prompt("Resultados de los principales equipos de Europa");
 
 while (texto != "ESC"){
