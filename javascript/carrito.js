@@ -1,3 +1,12 @@
+const nuestrosdestinos = [{id: 1 , destino:"Maceio"},
+                        {id: 2, destino: "Disney"},
+                        {id: 3, destino: "Salta"}];
+
+for (const destino of nuestrosdestinos){
+    console.log(destino.id);
+    console.log(destino.destino);
+}
+
 function promociones (dias, precio, disponibilidad) {
     this.dias = dias;
     this.precio = precio;
@@ -38,6 +47,35 @@ const salta = new promociones3(
     "3 noches",
     "$11350 por persona",
     "Hay disponibilidad");
+
+/*argentina.html*/
+
+class destinosargentina{
+    constructor (Destino, Fecha, Precio, Disponibilidad){
+        this.destino = Destino;
+        this.Fecha = Fecha;
+        this.Precio = Precio;
+        this.Disponibilidad = Disponibilidad;
+    }
+    consultar(){
+        console.log("Destino:"+ " " + this.destino);
+        console.log("Cantidad de días:"+ " " + this.dias);
+        console.log("Precio final:"+ " " + this.precio);
+        console.log("Disponibilidad:"+ " " + this.Disponibilidad);
+    }
+}
+
+const destinos = [];
+destinos.push (new destinosargentina ("Cordoba", "4 de Diciembre", "$35.870", "Hay disponibilidad"));
+destinos.push (new destinosargentina ("Mendoza", "Diciembre", "$39.050", "Hay disponibilidad"));
+destinos.push (new destinosargentina ("Isla Martín García", "Septiembre", "$5.400", "Hay disponibilidad"));
+destinos.push (new destinosargentina ("Tigre", "Noviembre", "$9.600", "Hay disponibilidad"));
+destinos.push (new destinosargentina ("Tandil", "Noviembre", "$18.300", "Hay disponibilidad"));
+destinos.push (new destinosargentina ("Bariloche", "Septiembre a Diciembre", "$55.240", "Hay disponibilidad"));
+
+for(const destinosargentina of destinos){
+    console.log(destinos.destino);
+}
 
 
 
