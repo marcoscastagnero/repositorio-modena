@@ -77,6 +77,17 @@ for(const destinosargentina of destinos){
     console.log(destinos.destino);
 }
 
+const promocionesUshuaia = [{id:1, nombre:"Ushuaia Clásico",precio: 12790},
+                            {id:2, nombre:"Escapa Ushuaia", precio: 14560},
+                            {id:3, nombre:"Ushuaia", precio: 16680}];
+
+for (const promociones of promocionesUshuaia){
+    let Ushuaia = document.createElement ("div");
+    Ushuaia.innerHTML = `<h2> ID: ${promociones.id}</h2>
+                        <p>  Ushuaia: ${promociones.nombre}</p>
+                        <p class "precio"> $ ${promociones.precio}</p>`;
+    document.body.appendChild(Ushuaia);
+}
 
 
 /*
