@@ -1,0 +1,210 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*index.html*/
+
+.head-index{
+    position: absolute;
+
+    .logo-index{
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        
+    }
+
+    .sesion-index{
+        padding-left: 1070px;
+        color: white;
+        font-family:'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 18px;
+        margin-top: 20px;
+
+        ul{
+            list-style: none;
+        }
+    }
+}
+
+.texto-index{
+    position:absolute;
+    margin-top: 20%;
+    margin-left: 10px;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    background: rgba(0, 0, 141, 0.452);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.titulo-index{
+    font-family:'Roboto', sans-serif;
+    font-weight: 800;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.grid-index{
+    display: grid;
+    grid-template: 405px 405px  / 290px 290px  ;
+    grid-template-areas: "europa norteamerica otras argentina"
+                        "latam caribe cruceros luna";
+    grid-row-gap: 20px;
+    grid-column-gap: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.europa{
+    grid-area: europa;
+}
+
+.texto-europa{
+    position: absolute;
+    font-size: 40px;
+    padding-left: 80px;
+    padding-top: 180px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.texto-europa:hover{
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.norteamerica{
+    grid-area: norteamerica;
+}
+
+.texto-norte{
+    @extend .texto-europa;
+    padding-left: 20px;
+}
+
+.texto-otras{
+    @extend .texto-europa;
+    padding-left: 20px;
+}
+
+.texto-arg{
+    @extend .texto-europa;
+    padding-left: 70px;
+}
+
+.texto-latam{
+    @extend .texto-europa;
+}
+
+.texto-caribe{
+    @extend .texto-europa;
+}
+
+.texto-cruceros{
+    @extend .texto-europa;
+    padding-left: 70px;
+}
+
+.texto-luna{
+    @extend .texto-europa;
+    padding-left: 35px;
+}
+
+.promociones{
+    @extend .titulo-index;
+}
+
+.grid-promociones{
+    display: grid;
+    grid-template: 400px / 400px  ;
+    grid-template-areas: "maceio disney salta";
+    grid-column-gap: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.maceio-promo{
+    grid-area:maceio;
+}
+
+.disney-promo{
+    grid-area: disney;
+}
+
+.salta-promo{
+    grid-area: salta;
+}
+
+.boton-maceio{
+    position: relative;
+    border-bottom: none;
+    border-radius: 5px;
+    border-color: none;
+    width: 100px;
+    height: 30px;
+    top: -70px;
+    left: 150px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.boton-maceio:hover{
+    background: rgb(2, 45, 136);
+    color: white;
+}
+
+.boton-disney{
+    @extend .boton-maceio;
+}
+
+.boton-salta{
+    @extend .boton-maceio;
+}
+
+.footer-index{
+    background: rgb(2, 45, 136);
+    margin-top: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+
+    h3{
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .direccion{
+        .titulo{
+            font-weight: 600;
+            font-size: 18px;
+        }
+        line-height: 10px;
+        margin-top: 12px;
+    }
+
+    .horario{
+        @extend .direccion;
+        margin-top: 30px;
+    }
+
+    .contacto{
+        @extend .direccion;
+        margin-top: 30px;
+    }
+
+    .facebook-index{
+        display: flex;
+        justify-content: right;
+        margin-right: 20px;
+        iframe{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}

@@ -10,19 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="javascript/main.js"></script>
 </head>
 <body>
-    <head class="head-index">
-        <div class="logo-index">
-            <img src="img/logo/logo-modena.png" alt="" width="90px" height="50px">
-        <div class="sesion-index">
-            <nav>
-                <ul>
-                    <li>Iniciar Sesión</li>
-                </ul>
-            </nav>
-        </div>
+    <head>
+        <div class="head-index">
+            <div class="logo-index">
+                <img src="img/logo/logo-modena.png" alt="" width="90px" height="50px">
+            <div class="sesion-index">
+                <nav>
+                    <ul>
+                        <li>Iniciar Sesión</li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
         </div>
         <div class="texto-index">
             <p>Elejí tu destino con Modena</p>
@@ -45,8 +48,8 @@
                 <img src="img/otras.png" alt="" width="290px" height="405px">
             </div>
             <div class="argentina">
-                <p class="texto-arg">Argentina</p>
-                <img src="img/argentina.png" alt="" width="290px" height="405px">
+                <a href="secciones/argentina.html"><p class="texto-arg">Argentina</p></a>
+                <a href="secciones/argentina.html"><img src="img/argentina.png" alt="" width="290px" height="405px"></a>
             </div>
             <div class="latam">
                 <p class="texto-latam">LATAM</p>
@@ -70,21 +73,48 @@
             <div class="grid-promociones">
                 <div class="maceio-promo">
                     <img src="img/maceio.png" alt="" width="400px" height="400px">
-                    <button type="button" class="boton-maceio">COMPRAR</button>
+                    <button type="button" class="boton-maceio" onclick="add (maceio,79.000 )">COMPRAR</button>
                 </div>
                 <div class="disney-promo">
                     <img src="img/disney.png" alt="" width="400px" height="400px">
-                    <button type="button" class="boton-disney">COMPRAR</button>
+                    <button type="button" class="boton-disney" onclick="add (disney, 390 )">COMPRAR</button>
                 </div>
                 <div class="salta-promo-salta">
                     <img src="img/salta.png" alt="" width="400px" height="400px">
-                    <button type="button" class="boton-salta">COMPRAR</button>
+                    <button type="button" class="boton-salta" onclick="add (salta, 11.350 )">COMPRAR</button>
                 </div>
             </div>
         </aside>
     </main>
-    <footer>
-
+    <footer class="footer-index">
+        <h3>Donde encontrarnos</h3>
+        <div class="direccion"> 
+            <p class="titulo">Dirección</p>
+            <p>48 e/ 19 y 20 Nº1205, La Plata, Buenos Aires</p>
+        </div>
+        <div class="horario">
+            <p class="titulo">Horario</p>
+            <p>Lunes a viernes de 8 a 16hs, sabados de 9 a 13hs</p>
+        </div>
+        <div class="contacto">
+            <p class="titulo">Contacto</p>
+            <div class="telefono-index">
+                <p class="telefono">Telefono</p>
+                <p>+549221 421-6457</p>
+            </div>
+            <div class="whatsapp-index">
+                <p class="whatsapp">Whatsapp</p>
+                <p>+549221 306-8793</p>
+            </div>
+            <div class="email-index">
+                <p class="email">Email</p>
+                <p>modenaviajeslp@gmail.com</p>
+            </div>
+        </div>
+        <div class="facebook-index">
+            <iframe src="https://www.facebook.com/modenatravellp/?ref=page_internal" frameborder="0"></iframe>
+        </div>
     </footer>
+    <script src="javascript/carrito.js"></script>
 </body>
 </html>

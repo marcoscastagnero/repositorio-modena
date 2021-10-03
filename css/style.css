@@ -1,315 +1,141 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+* {
+  padding: 0px;
+  margin: 0px; }
 
 /*index.html*/
+.head-index {
+  position: absolute; }
+  .head-index .logo-index {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex; }
+  .head-index .sesion-index {
+    padding-left: 1070px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 20px; }
+    .head-index .sesion-index ul {
+      list-style: none; }
 
-.head-index{
+.texto-index {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+  background: rgba(0, 0, 141, 0.452);
+  padding: 15px;
+  border-radius: 10px; }
+
+.titulo-index, .promociones {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  margin-top: 10px;
+  text-align: center; }
+
+.grid-index {
+  display: grid;
+  grid-template: 405px 405px  / 290px 290px;
+  grid-template-areas: "europa norteamerica otras argentina" "latam caribe cruceros luna";
+  grid-row-gap: 20px;
+  grid-column-gap: 40px;
+  padding-left: 20px;
+  padding-top: 20px; }
+
+.europa {
+  grid-area: europa; }
+
+.texto-europa, .texto-norte, .texto-otras, .texto-arg, .texto-latam, .texto-caribe, .texto-cruceros, .texto-luna {
+  position: absolute;
+  font-size: 40px;
+  padding-left: 80px;
+  padding-top: 180px;
+  font-family: 'Roboto', sans-serif;
+  color: white; }
+
+.texto-europa:hover, .texto-norte:hover, .texto-otras:hover, .texto-arg:hover, .texto-latam:hover, .texto-caribe:hover, .texto-cruceros:hover, .texto-luna:hover {
+  font-weight: 800;
+  cursor: pointer; }
+
+.norteamerica {
+  grid-area: norteamerica; }
+
+.texto-norte {
+  padding-left: 20px; }
+
+.texto-otras {
+  padding-left: 20px; }
+
+.texto-arg {
+  padding-left: 70px; }
+
+.texto-cruceros {
+  padding-left: 70px; }
+
+.texto-luna {
+  padding-left: 35px; }
+
+.grid-promociones {
+  display: grid;
+  grid-template: 400px / 400px;
+  grid-template-areas: "maceio disney salta";
+  grid-column-gap: 40px;
+  padding-left: 20px;
+  padding-top: 20px; }
+
+.maceio-promo {
+  grid-area: maceio; }
+
+.disney-promo {
+  grid-area: disney; }
+
+.salta-promo {
+  grid-area: salta; }
+
+.boton-maceio, .boton-disney, .boton-salta {
+  position: relative;
+  border-bottom: none;
+  border-radius: 5px;
+  border-color: none;
+  width: 100px;
+  height: 30px;
+  top: -70px;
+  left: 150px;
+  font-family: 'Roboto', sans-serif; }
+
+.boton-maceio:hover, .boton-disney:hover, .boton-salta:hover {
+  background: #022d88;
+  color: white; }
+
+.footer-index {
+  background: #022d88;
+  margin-top: 20px;
+  color: white;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif; }
+  .footer-index h3 {
+    font-weight: 700;
+    font-size: 30px; }
+  .footer-index .direccion, .footer-index .horario, .footer-index .contacto {
+    line-height: 10px;
+    margin-top: 12px; }
+    .footer-index .direccion .titulo, .footer-index .horario .titulo, .footer-index .contacto .titulo {
+      font-weight: 600;
+      font-size: 18px; }
+  .footer-index .horario {
+    margin-top: 30px; }
+  .footer-index .contacto {
+    margin-top: 30px; }
+  .footer-index .facebook-index {
     display: flex;
-    justify-content: space-between;
-}
-
-.logo-index{
-    position: absolute;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-.sesion-index{
-    padding-left: 1180px;
-}
-.sesion-index ul{
-    display: flex;
-    list-style: none;
-    background: white;
-    border-radius: 5px;
-    padding: 10px 10px 10px 10px;
-    font-family:'Roboto', sans-serif ;
-}
-
-.texto-index{
-    display: block;
-    position: absolute;
-    width:50%;
-    top: 50%;
-}
-
-.texto-index p{
-    font-size: 70px;
-    padding-left: 20px;
-    font-family: 'Roboto', sans-serif;
-    color:white;
-    background: rgba(0, 0, 141, 0.452);
-    border-radius: 10px;
-}
-
-.titulo-index{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    padding-top: 20px;
-}
-
-.grid-index{
-    display: grid;
-    grid-template: 405px 405px  / 290px 290px  ;
-    grid-template-areas: "europa norteamerica otras argentina"
-                        "latam caribe cruceros luna";
-    grid-row-gap: 20px;
-    grid-column-gap: 40px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.europa{
-    grid-area: europa;
-}
-
-.texto-europa{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 80px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-.texto-europa:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-.europa img{
-    margin-top: -18px;
-}
-
-.norteamerica{
-    grid-area: norteamerica;
-    
-}
-
-.texto-norte{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 20px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.texto-norte:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.norteamerica img{
-    margin-top: -18px;
-}
-
-.otras{
-    grid-area: otras;
-}
-
-.texto-otras{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 20px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.texto-otras:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.otras img{
-    margin-top: -18px;
-}
-
-.argentina{
-    grid-area: argentina;
-}
-
-.texto-arg{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 60px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.texto-arg:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.argentina img{
-    margin-top: -18px;
-}
-
-.latam{
-    grid-area: latam;
-}
-
-.texto-latam{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 80px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.texto-latam:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.latam img{
-    margin-top: -18px;
-}
-
-.caribe{
-    grid-area: caribe;
-}
-
-.texto-caribe{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 80px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.texto-caribe:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.caribe img{
-    margin-top: -18px;
-}
-
-.cruceros{
-    grid-area: cruceros;
-}
-
-.texto-cruceros{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 65px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.texto-cruceros:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.cruceros img{
-    margin-top: -18px;
-}
-
-.luna{
-    grid-area: luna;
-}
-
-.texto-luna{
-    position: absolute;
-    font-size: 40px;
-    padding-left: 40px;
-    padding-top: 180px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-
-.texto-luna:hover{
-    font-weight: 800;
-    cursor: pointer;
-}
-
-.luna img{
-    margin-top: -18px;
-}
-
-/*aside*/
-
-.promociones{
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-}
-
-.grid-promociones{
-    display: grid;
-    grid-template: 400px / 400px  ;
-    grid-template-areas: "maceio disney salta";
-    grid-column-gap: 40px;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.maceio-promo{
-    grid-area:maceio;
-}
-
-.disney-promo{
-    grid-area: disney;
-}
-
-.salta-promo{
-    grid-area: salta;
-}
-
-.boton-maceio{
-    position: relative;
-    border-bottom: none;
-    border-radius: 5px;
-    border-color: none;
-    width: 100px;
-    height: 30px;
-    top: -70px;
-    left: 150px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.boton-maceio:hover{
-    background: rgb(2, 45, 136);
-    color: white;
-}
-
-.boton-disney{
-    position: relative;
-    border-bottom: none;
-    border-radius: 5px;
-    border-color: none;
-    width: 100px;
-    height: 30px;
-    top: -70px;
-    left: 150px;
-    font-family: 'Roboto', sans-serif;
-}
-.boton-disney:hover{
-    background: rgb(2, 45, 136);
-    color: white;
-}
-
-.boton-salta{
-    position: relative;
-    border-bottom: none;
-    border-radius: 5px;
-    border-color: none;
-    width: 100px;
-    height: 30px;
-    top: -70px;
-    left: 150px;
-    font-family: 'Roboto', sans-serif;
-}
-.boton-salta:hover{
-    background: rgb(2, 45, 136);
-    color: white;
-}
+    justify-content: right;
+    margin-right: 20px; }
+    .footer-index .facebook-index iframe {
+      width: 400px;
+      height: 400px; }

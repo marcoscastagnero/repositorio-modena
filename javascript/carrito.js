@@ -48,6 +48,28 @@ const salta = new promociones3(
     "$11350 por persona",
     "Hay disponibilidad");
 
+
+
+function add (producto, precio) {
+    console.log (producto, precio);
+    
+        let nombre = prompt ("Ingrese su nombre");
+        let dni = prompt ("Ingrese dni");
+        let tarjeta = prompt ("Ingrese tarjeta");
+        let numero = prompt ("Ingrese numero de seguridad de la tarjeta");
+        let vencimiento = prompt ("Ingrese vencimiento de la tarjeta");
+
+    if (add == true){
+        console.log ("compraste esta promocion");
+    }else{
+        return;
+    }
+    
+    localStorage.setItem("nombre", nombre);
+    localStorage.setItem("dni", dni);
+    localStorage.setItem("tarjeta", tarjeta);
+}
+
 /*argentina.html*/
 
 class destinosargentina{
@@ -77,6 +99,8 @@ for(const destinosargentina of destinos){
     console.log(destinos.destino);
 }
 
+
+/*
 const promocionesUshuaia = [{id:1, nombre:"Ushuaia Clásico",precio: 12790},
                             {id:2, nombre:"Escapa Ushuaia", precio: 14560},
                             {id:3, nombre:"Ushuaia", precio: 16680}];
@@ -88,7 +112,7 @@ for (const promociones of promocionesUshuaia){
                         <p class "precio"> $ ${promociones.precio}</p>`;
     document.body.appendChild(Ushuaia);
 }
-
+*/
 
 /*
 let pregunta = prompt ("¿De cual promoción queres cotización? ");
