@@ -208,3 +208,107 @@
         }
     }
 }
+
+
+//argentina.html
+
+.titulo-argentina{
+    position:absolute;
+    margin-top: 10%;
+    margin-left: 10px;
+    font-family:'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: white;
+    font-size: 50px;
+}
+
+main{
+    .titulo-argentina{
+        text-align: center;
+        font-family:'Roboto', sans-serif;
+        margin-top: 10px;
+    }
+
+    .grid-argentina{
+        display: grid;
+        grid-template: 400px / 400px   ;
+        grid-template-areas: "cordoba mendoza isla "
+                            "tigre tandil bariloche";
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+        .cordoba-promo{
+            grid-area: cordoba;
+        }
+
+        .mendoza-promo{
+            grid-area: mendoza;
+        }
+
+        .isla-martin-promo{
+            grid-area: isla;
+        }
+
+        .tigre-promo{
+            grid-area: tigre;
+        }
+
+        .tandil-promo{
+            grid-area: tandil;
+        }
+
+        .bariloche-promo{
+            grid-area: bariloche;
+        }
+    }
+}
+
+//europa.html
+
+.titulo-europa{
+    @extend .titulo-argentina;
+    margin-top: 20%;
+    background: rgba(0, 0, 141, 0.452);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+main{
+    .grid-europa{
+        display: grid;
+        grid-template: 400px / 400px   ;
+        grid-template-areas: "levante costa cantabrico "
+                            "suiza escocia turquia";
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+        .levante{
+            grid-area: levante;
+        }
+
+        .costadelsol{
+            grid-area: costa;
+        }
+
+        .cantabrico{
+            grid-area: cantabrico;
+        }
+
+        .suiza{
+            grid-area: suiza;
+        }
+
+        .escocia{
+            grid-area: escocia;
+        }
+
+        .turquia{
+            grid-area: turquia;
+        }
+    }
+}

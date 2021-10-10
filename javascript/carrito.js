@@ -50,7 +50,7 @@ const salta = new promociones3(
 
 
 
-function add (producto, precio) {
+/*function add (producto, precio) {
     console.log (producto, precio);
     
         let nombre = prompt ("Ingrese su nombre");
@@ -68,7 +68,7 @@ function add (producto, precio) {
     localStorage.setItem("nombre", nombre);
     localStorage.setItem("dni", dni);
     localStorage.setItem("tarjeta", tarjeta);
-}
+}*/
 
 /*argentina.html*/
 

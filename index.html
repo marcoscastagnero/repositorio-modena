@@ -36,11 +36,11 @@
         <h1 class="titulo-index">NUESTROS DESTINOS</h1>
         <div class="grid-index">
             <div class="europa">
-                <p class="texto-europa">Europa</p>
+                <a href="secciones/europa.html"><p class="texto-europa">Europa</p></a>
                 <img src="img/paris.png" alt="" width="290px" height="405px">
             </div>
             <div class="norteamerica">
-                <p class="texto-norte">Norte America</p>
+                <a href="secciones/norteamerica.html"><p class="texto-norte">Norte America</p></a>
                 <img src="img/norteamerica.png" alt="" width="290px" height="405px">
             </div>
             <div class="otras">
@@ -73,19 +73,22 @@
             <div class="grid-promociones">
                 <div class="maceio-promo">
                     <img src="img/maceio.png" alt="" width="400px" height="400px">
-                    <button type="button" class="boton-maceio" onclick="add (maceio,79.000 )">COMPRAR</button>
+                    <button type="button" class="boton-maceio" id="maceiocomprar">COMPRAR</button>
                 </div>
                 <div class="disney-promo">
                     <img src="img/disney.png" alt="" width="400px" height="400px">
-                    <button type="button" class="boton-disney" onclick="add (disney, 390 )">COMPRAR</button>
+                    <button type="button" class="boton-disney" id="disneycomprar">COMPRAR</button>
                 </div>
                 <div class="salta-promo-salta">
                     <img src="img/salta.png" alt="" width="400px" height="400px">
-                    <button type="button" class="boton-salta" onclick="add (salta, 11.350 )">COMPRAR</button>
+                    <button type="button" class="boton-salta" id="saltacomprar">COMPRAR</button>
                 </div>
             </div>
         </aside>
     </main>
+    <aside class="asistencia">
+
+    </aside>
     <footer class="footer-index">
         <h3>Donde encontrarnos</h3>
         <div class="direccion"> 
@@ -115,6 +118,9 @@
             <iframe src="https://www.facebook.com/modenatravellp/?ref=page_internal" frameborder="0"></iframe>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascript/dom.js"></script>
     <script src="javascript/carrito.js"></script>
+    <script src="javascript/jquery.js"></script>
 </body>
 </html>

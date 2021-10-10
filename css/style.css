@@ -139,3 +139,66 @@
     .footer-index .facebook-index iframe {
       width: 400px;
       height: 400px; }
+
+.titulo-argentina, .titulo-europa {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+  font-size: 50px; }
+
+main .titulo-argentina, main .titulo-europa {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px; }
+
+main .grid-argentina {
+  display: grid;
+  grid-template: 400px / 400px;
+  grid-template-areas: "cordoba mendoza isla " "tigre tandil bariloche";
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px; }
+  main .grid-argentina .cordoba-promo {
+    grid-area: cordoba; }
+  main .grid-argentina .mendoza-promo {
+    grid-area: mendoza; }
+  main .grid-argentina .isla-martin-promo {
+    grid-area: isla; }
+  main .grid-argentina .tigre-promo {
+    grid-area: tigre; }
+  main .grid-argentina .tandil-promo {
+    grid-area: tandil; }
+  main .grid-argentina .bariloche-promo {
+    grid-area: bariloche; }
+
+.titulo-europa {
+  margin-top: 20%;
+  background: rgba(0, 0, 141, 0.452);
+  padding: 15px;
+  border-radius: 10px; }
+
+main .grid-europa {
+  display: grid;
+  grid-template: 400px / 400px;
+  grid-template-areas: "levante costa cantabrico " "suiza escocia turquia";
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px; }
+  main .grid-europa .levante {
+    grid-area: levante; }
+  main .grid-europa .costadelsol {
+    grid-area: costa; }
+  main .grid-europa .cantabrico {
+    grid-area: cantabrico; }
+  main .grid-europa .suiza {
+    grid-area: suiza; }
+  main .grid-europa .escocia {
+    grid-area: escocia; }
+  main .grid-europa .turquia {
+    grid-area: turquia; }
