@@ -312,3 +312,95 @@ main{
         }
     }
 }
+
+/*norteamerica.html*/
+.titulo-norteamerica{
+    @extend .titulo-argentina;
+    margin-top: 30%;
+    margin-left: 20px;
+    background: rgba(0, 0, 141, 0.452);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.titulo-norte{
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+main{
+    .grid-norteamerica{
+        display: grid;
+        grid-template: 400px / 400px   ;
+        grid-template-areas: "miami nuevayork lasvegas "
+                            "losangeles hollywood ...";
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+        .miami{
+            grid-area: miami;
+        }
+
+        .nuevayork{
+            grid-area: nuevayork;
+        }
+
+        .lasvegas{
+            grid-area: lasvegas;
+        }
+
+        .losangeles{
+            grid-area: losangeles;
+        }
+
+        .hollywood{
+            grid-area: hollywood;
+        }
+    }
+}
+
+/*otrasculturas.html*/
+
+.titulo-culturas{
+    @extend .titulo-norteamerica;
+}
+main{
+    .titulo-otras{
+        @extend .titulo-norte;
+    }
+    .grid-culturas{
+        display: grid;
+        grid-template: 400px / 400px   ;
+        grid-template-areas: "tailandia camboya namibia "
+                            "safari ruta ...";
+        grid-column-gap: 40px;
+        grid-row-gap: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+
+        .tailandia{
+            grid-area: tailandia;
+        }
+
+        .camboya{
+            grid-area: camboya;
+        }
+
+        .namibia{
+            grid-area: namibia;
+        }
+
+        .safari{
+            grid-area: safari;
+        }
+
+        .ruta{
+            grid-area: ruta
+        }
+    }
+}

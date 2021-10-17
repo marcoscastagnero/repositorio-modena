@@ -140,7 +140,7 @@
       width: 400px;
       height: 400px; }
 
-.titulo-argentina, .titulo-europa {
+.titulo-argentina, .titulo-europa, .titulo-norteamerica, .titulo-culturas {
   position: absolute;
   margin-top: 10%;
   margin-left: 10px;
@@ -150,7 +150,7 @@
   color: white;
   font-size: 50px; }
 
-main .titulo-argentina, main .titulo-europa {
+main .titulo-argentina, main .titulo-europa, main .titulo-norteamerica, main .titulo-culturas {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   margin-top: 10px; }
@@ -202,3 +202,57 @@ main .grid-europa {
     grid-area: escocia; }
   main .grid-europa .turquia {
     grid-area: turquia; }
+
+/*norteamerica.html*/
+.titulo-norteamerica, .titulo-culturas {
+  margin-top: 30%;
+  margin-left: 20px;
+  background: rgba(0, 0, 141, 0.452);
+  padding: 15px;
+  border-radius: 10px; }
+
+.titulo-norte, main .titulo-otras {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+main .grid-norteamerica {
+  display: grid;
+  grid-template: 400px / 400px;
+  grid-template-areas: "miami nuevayork lasvegas " "losangeles hollywood ...";
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px; }
+  main .grid-norteamerica .miami {
+    grid-area: miami; }
+  main .grid-norteamerica .nuevayork {
+    grid-area: nuevayork; }
+  main .grid-norteamerica .lasvegas {
+    grid-area: lasvegas; }
+  main .grid-norteamerica .losangeles {
+    grid-area: losangeles; }
+  main .grid-norteamerica .hollywood {
+    grid-area: hollywood; }
+
+/*otrasculturas.html*/
+main .grid-culturas {
+  display: grid;
+  grid-template: 400px / 400px;
+  grid-template-areas: "tailandia camboya namibia " "safari ruta ...";
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+  padding-left: 20px;
+  padding-top: 20px; }
+  main .grid-culturas .tailandia {
+    grid-area: tailandia; }
+  main .grid-culturas .camboya {
+    grid-area: camboya; }
+  main .grid-culturas .namibia {
+    grid-area: namibia; }
+  main .grid-culturas .safari {
+    grid-area: safari; }
+  main .grid-culturas .ruta {
+    grid-area: ruta; }
